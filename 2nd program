@@ -1,0 +1,16 @@
+# The "Reverser" takes a string as input and returns that string in reverse order, with the opposite case.
+# Examples
+# reverse("Hello World") ➞ "DLROw OLLEh"
+# reverse("ReVeRsE") ➞ "eSrEvEr"
+# reverse("Radar") ➞ "RADAr
+def stringRev():
+    """function which Reverser takes a string as input and returns that string in reverse order, with the opposite case"""
+    try:
+        my_str=(input("enter the string\n"))
+        new_str=my_str[::-1]
+        new_str=new_str.swapcase()
+        return new_str
+    except Exception as e:
+        print(e)
+print(stringRev())
+print(stringRev.__doc__)
